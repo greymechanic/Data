@@ -26,6 +26,7 @@ $(function() {
             var dataSetView = new DataSetView({ collection: dataSet });
             dataSetView.render();
             $('#putMyDataHere').html(dataSetView.el);
+            console.log(dataSet);
         },
         error: function(dataSet, error) {
             console.log(error);

@@ -46,22 +46,24 @@
               <p>it didn't work :(</p>
             </div>
 
-            <div id="putMyDataHere"></div>
+            <div id="putMyDataHere">hi I'm about to disappear</div>
 
         </div>
 
         <script id="dataSet-tpl" type="text/x-handlebars-template">
             {{#each data}}
               <div class="data">
-                  <h2 class="name"><a href="#">{{whatever}}</a></h2>
+                  <h2 class="name" contenteditable><a href="#">{{whatever}}</a></h2>
                   <p class="meta">{{stuff}}</p>
                   <div>{{score}}</div>
+                  <img src="{{img.url}}">
               </div>
             {{/each}}
         </script>
 
         <script type="text/javascript" src="js/handlebars-v3.0.0.js"></script>
         <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/hold.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
 
     </body>
